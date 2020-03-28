@@ -1,0 +1,597 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+ body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;	
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Nova Flat', cursive;
+font-family: 'Josefin Sans', sans-serif; */
+
+/* Container */
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+	width: 100%;
+	z-index: 1000;
+	position: absolute;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	width: 179px;
+	height: 100px;
+	border-radius: 0 0 22px 22px;
+	background-color: #0f7bff;
+	position: relative;
+}
+
+.logo {
+	width: 131px;
+	height: 33px;
+	color: #feffff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 24px;
+	text-decoration: none;
+	position: absolute;
+	margin: 33px 24px;
+}
+
+/* Nav */
+
+.navigation {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 27px;
+	position: relative;
+	width: 100%;
+	max-width: 625px;
+}
+
+.nav__link {
+	color: #929292;
+	text-decoration: none;
+	margin: 0 20px;
+	display: inline-block;
+}
+
+.nav__link:hover {
+	color: #0f7bff;
+}
+
+#nav__sign-up {
+	width: 100%;
+	max-width: 165px;
+	height: 50px;
+	color: #ffffff;
+	background-color: #0063dd;
+	font-family: Quicksand;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 27px;
+	text-transform: uppercase;
+	position: absolute;
+	margin: -10px 51px;
+	border-radius: 25px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+/* Intro */
+
+.intro {
+	width: 100%;
+	max-width: 1920px;
+	height: 100vh;
+	background: url("D:/Verstka/Academy/HomePageTest/images/background/HomePage.jpg") no-repeat; 
+	background-size: cover; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f5fcfd;
+}
+
+
+.intro__inner {
+	width: 100%;
+	max-width: 610px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro__suptitle {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #333333;
+}
+
+.intro__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #929292;
+	padding-bottom: 150px; 
+}
+
+.intro__img {
+	background: url("D:/Verstka/Academy/HomePageTest/images/layer.png") center no-repeat;
+	background-size: 440px 450px;
+	background-position: 80px 150px;
+	width: 500px;
+	height: 450px;
+	margin: -230px 0;
+	position: relative;
+	z-index: 1;
+}
+
+/* Button */
+
+.btn {
+	color: #0f7bff;
+	background-color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 27px;
+	text-decoration: none;
+	border-radius: 35px;
+	border: 2px solid #0f7bff;
+	padding: 15px 47px;
+	margin-left: 30px;
+	position: absolute;
+	top: 50%;
+	transition: background-color .2s linear, color .2s linear;
+}
+
+#btn__download {
+	right: 50%;
+	z-index: 10001;
+}
+
+#btn__free {
+	left: 50%;
+	z-index: 10000;
+}
+
+.btn:hover {
+	background-color: #0f1ffc;
+	color: #ffffff;
+}
+
+/* Features */
+
+.feature {
+	position: relative;
+	z-index: 100;
+	height: 100%;
+	max-height: 600px;
+	width: 100%;
+	max-width: 1920px;
+	display: flex;
+	justify-content: center;
+	background-color: #f5fcfd;
+}
+
+.feature__item {
+	width: 100%;
+	height: 100%;
+	max-width: 300px;
+	max-height: 230px;
+	text-align: center;
+	box-shadow: 0 0 25px #f0f0f0;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: 100px 20px;
+}
+
+.feature__text {
+	padding-bottom: 10px;
+}
+
+.feature__icon {
+	margin-top: 15px;
+}
+
+.feature__title {
+	margin: 15px 0;
+	font-weight: 700;
+}
+
+#feature__item__middle {
+	margin: 130px 0;
+}
+
+.scroll {
+	position: relative;
+	top: -5%;
+	left: 1000%;
+	border-radius: 25px;
+	z-index: 10000;
+}
+
+.scroll:hover {
+	background-color: #0f1ffc; 
+}
+
+.scroll:focus {
+	display: none;
+	scroll-behavior: smooth;
+}
+
+/* About */
+
+.about__item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 100px;
+}
+
+.about__photo {
+	width: 50%;
+	position: relative;
+}
+
+.about__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+}
+
+.about__text {
+	color: #929292;
+	font-weight: 500;
+}
+
+.about__item1 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.about__link {
+	text-decoration: none;
+	color: #0f7bff;
+	font-weight: 700;
+}
+
+/* Work */
+
+.work {
+	background-color: #f5fcfd;
+	padding: 120px 0;
+	text-align: center;
+}
+
+.work__header {
+	text-align: center;
+	width: 100%;
+	max-width: 731px;
+	margin: 0 auto;
+}
+
+.work__img {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.work__item {
+	width: 100%;
+	max-width: 300px;
+	text-align: center;
+	display: inline-block;
+	margin: 30px 48px;
+}
+
+/* Price */
+
+.price {
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	max-height: 836px;
+}
+
+.price__info {
+	width: 100%;
+	max-width: 330px;
+	margin: 300px 60px;
+}
+
+.price__button {
+	text-decoration: none;
+	margin: 0 -10px;
+	padding: 15px 60px;
+	border: 2px solid #0f7bff;
+	font-weight: 700;
+}
+
+#price__month {
+	color: #fff;
+	background-color: #0f7bff;
+	border-radius: 25px 0 0 25px;
+}
+
+#price__year {
+	color: #0f7bff;
+	background-color: #ffffff;
+	border-radius: 0 25px 25px 0;
+}
+
+.price__item {
+	width: 100%;
+	height: 100%;
+	max-width: 360px;
+	max-height: 576px;
+	box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
+	border-radius: 5px;
+	margin: 130px 30px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.price__text {
+	color: #929292;
+	margin-bottom: 40px;
+}
+
+.price__img {
+	margin-top: 40px;
+}
+
+.price__btn {
+	padding: 15px 60px;
+	text-decoration: none;
+	border-radius: 25px;
+	background-color: #0f7bff;
+	color: #fff;
+	font-weight: 700;
+	border: 2px solid #0f7bff;
+}
+
+#btn__premium {
+	background-color: #fff;
+	color: #0f7bff;
+}
+
+.price__block {
+	display: flex;
+	justify-content: center;
+}
+
+.price__title:after {
+	content: "";
+	display: block;
+	width: 165px;
+	height: 1px;
+	background-color: #e0e0e0;
+	margin: 10px auto;
+}
+
+/* Review */
+
+.review {
+	background-color: #f5fcfd;
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	max-height: 600px;
+	display: flex;
+
+}
+
+.review__inner {
+	margin: 70px 0;
+}
+
+.review__item {
+	display: inline-block;
+	margin: 30px auto;
+	width: 300px;
+	height: 215px;
+	box-shadow: 0 0 25px rgba(165, 165, 165, 0.1);
+	border-radius: 5px;
+	background-color: #ffffff;
+	background: url("D:/Verstka/Academy/HomePageTest/images/Review/Twitter_icon.png") no-repeat;
+	background-position: 90% 10%;
+	padding: 10px;
+}
+
+/* News */
+
+.news {
+	width: 100%;
+	height: 100%;
+	max-height: 1080px;
+	max-width: 1920px;
+	background-color: #ffffff;
+	margin: 130px 0;
+}
+
+.news__header {
+	width: 70%;
+	margin: 0 200px 50px;
+	padding-top: 50px;
+	text-align: center;
+	background: url("D:/Verstka/Academy/HomePageTest/images/News/news_back.png") no-repeat;
+	background-position: 50% 40%;
+}
+
+.news__text {
+	color: #929292;
+}
+
+.news__block {
+	width: 45%;
+	padding-right: 100px;
+}
+
+.news__icon {
+	margin-left: 10px;
+}
+
+.news__block__title {
+	color: #0f7bff;
+}
+
+.news__link {
+	color: #0f7bff;
+	font-weight: 700;
+
+}
+
+.news__item {
+	width: 30%;	
+	flex-basis: 50%;
+}
+
+.news__intro {
+	display: flex;
+}
+
+/* Buy */
+
+.buy {
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	max-height: 336px;
+	background-color: #f5fcfd;
+	padding: 100px 0 100px 0;
+}
+
+.buy__block {
+	width: 263px;
+	height: 76px;
+	border-radius: 5px;
+	background-color: #0f7bff;
+	padding: 25px 75px;
+}
+
+.buy__btn {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.buy__inner	{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 300px;
+}
+
+/* Follow */
+
+.follow {
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	max-height: 828px;
+	background-color: #0f7bff;
+	text-align: center;
+	padding-top: 130px;
+}
+
+.follow__title {
+	margin-bottom: 30px;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.follow__input {
+	border-radius: 30px 0 0 30px;
+	border: 2px solid #ffffff;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0);
+	padding: 15px 130px 15px 30px;
+}
+
+input[type ="email"]::placeholder {
+	color: #fff;
+}
+
+.follow__btn {
+	
+}
+
+.follow__link {
+	color: #0f7bff;
+	border-radius: 0 30px 30px 0;
+	background-color: #ffffff;
+	padding: 14px 40px 14px 40px;
+	margin-left: -5px;
+}
+
+.follow:after {
+	width: 100%;
+	max-width: 1920px;
+	height: 1px;
+	background-color: #ffffff; 
+}
+
+.follow__line {
+	margin-top: 130px;
+}
+
+/* Footer */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__icon {
+	width: 10px;
+	height: 20px;
+	margin: 15px -90px;
+}
+
+.footer__arrow {
+	width: 45px;
+	height: 45px;
+	border-radius: 3px;
+	background-color: #ffffff;
+}
+
+.footer__link {
+	margin: 15px -50px;
+	color: #ffffff;
+}
+
+#footer__up {
+	margin: 10px 10px;
+}
+
+.footer__text {
+	color: #ffffff;
+}
